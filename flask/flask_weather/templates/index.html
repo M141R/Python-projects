@@ -8,17 +8,17 @@
   </head>
   <body>
     <main class="container ">
-      <div class="">
-          <h1 class="">Weather App</h1>
-          <div class="">
+      <div class="main">
+          <h1>Weather App</h1>
+          <div>
               <form action="/" method="post">
-                <input type="text" id="city_name" name="CityName" class="" />
+                <input type="text" id="city_name" name="CityName" />
                 <button>Find</button>
               </form>
           </div>
           {% if weather %}
           <h2>Weather in <b>{{ weather.location }}</b></h2>
-          <p class="text-9xl font-mono text-center">{{ weather.temp_c }}</p>
+          <p>{{ weather.temp_c }}</p>
           <p>{{ weather.description }}</p>
           {% endif %}
       </div>
